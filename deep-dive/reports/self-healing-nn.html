@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Self-Healing Neural Network</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <nav class="topbar-nav">
+            <a href="/main/index.html" data-section="home">Home</a>
+            <a href="/reading/reading.html" data-section="reading">Reading</a>
+            <a href="/writing/writing.html" data-section="writing">Writing</a>
+            <a href="/deep-dive/deep-dives.html" data-section="deep-dive">Deep Dives</a>
+        </nav>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="section">
+            <div class="label">
+                <h5>NAVIGATION</h5>
+            </div>
+            <a href="/main/index.html" data-section="home">Home</a>
+            <a href="/reading/reading.html" data-section="reading">Reading</a>
+            <a href="/writing/writing.html" data-section="writing">Writing</a>
+            <a href="/deep-dive/deep-dives.html" data-section="deep-dive">Deep Dives</a>
+        </div>
+
+        <div class="section">
+            <div class="label">
+                <h5>FIND ME ON</h5>
+            </div>
+            <a href="https://x.com/amarjeet_076">Twitter</a>
+            <a href="https://www.linkedin.com/in/amarjeetsingh461/">Linkedin</a>
+            <a href="https://github.com/amarjeetsingh146">GitHub</a>
+        </div>
+    </aside>
+
+    <main class="content deep-dive-article">
+
+        <a href="/deep-dive/deep-dives.html" class="back-btn">← Back to Deep Dives</a>
+
+        <h1>Self-Healing Neural Network</h1>
+        <div class="meta">
+            Concept • Prototype • Systems Thinking
+        </div>
+
+        <p class="intro">
+            Modern neural networks assume that all neurons behave correctly during inference.
+            This deep dive explores a different idea:
+            <strong>What if a network could detect faulty neurons at runtime and heal itself?</strong>
+        </p>
+
+        <section>
+            <h2>Problem Statement</h2>
+            <p>
+                Traditional fault tolerance relies on hardware redundancy.
+                However, in large-scale or edge deployments, hardware redundancy
+                is expensive, power-hungry, and not always feasible.
+            </p>
+            <p>
+                Neural networks today fail silently.
+                A single corrupted activation can propagate and degrade the entire output.
+            </p>
+        </section>
+
+        <section>
+            <h2>Core Idea</h2>
+            <p>
+                Introduce a <strong>self-monitoring layer</strong> that:
+            </p>
+            <ul>
+                <li>Detects anomalous neuron activations</li>
+                <li>Flags unstable or dead neurons</li>
+                <li>Dynamically reroutes computation paths</li>
+            </ul>
+
+            <blockquote>
+                Instead of trusting every neuron, the network learns to doubt itself.
+            </blockquote>
+        </section>
+
+        <section>
+            <h2>System Design</h2>
+            <p>
+                The prototype is divided into three logical components:
+            </p>
+
+            <ol>
+                <li><strong>Activation Monitor</strong> – tracks statistical deviation</li>
+                <li><strong>Fault Classifier</strong> – determines temporary vs permanent faults</li>
+                <li><strong>Rerouting Engine</strong> – redirects flow through healthy neurons</li>
+            </ol>
+
+            <p>
+                This design avoids retraining and operates entirely during inference.
+            </p>
+        </section>
+
+        <section>
+            <h2>Why This Matters</h2>
+            <p>
+                Self-healing architectures are critical for:
+            </p>
+            <ul>
+                <li>Autonomous systems</li>
+                <li>Robotics</li>
+                <li>Space & edge AI</li>
+                <li>Long-running inference services</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Limitations & Open Questions</h2>
+            <p>
+                This is an early-stage exploration.
+                Challenges include overhead, false positives,
+                and defining what “faulty” truly means in stochastic systems.
+            </p>
+        </section>
+
+        <section>
+            <h2>Source Code</h2>
+            <p>
+                The prototype and experiments are available on GitHub:
+            </p>
+
+            <a class="project-link" href="https://github.com/amarjeetsingh146/self-healing-nn" target="_blank">
+                View Repository →
+            </a>
+        </section>
+
+        <p class="author">— Amarjeet Singh</p>
+
+    </main>
+
+    <script src="../../scripts/script.js"></script>
+</body>
+
+</html>

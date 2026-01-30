@@ -1,0 +1,450 @@
+/*Top navbar (mobile only)*/
+.topbar {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: white;
+  border-bottom: 1px solid #eee;
+  padding: 0 16px;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  line-height: 1;
+  color: #222;
+}
+
+/* Sidebar links */
+.sidebar a,
+.topbar-nav a {
+  display: inline-block;
+  padding: 8px 16px;
+  color: #4a5d73;
+  text-decoration: none;
+  font-weight: 400;
+  transition: all 0.2s ease;
+  font-size: 18px;
+}
+
+.sidebar a:hover,
+.topbar-nav a:hover {
+  color: #000;
+}
+
+.sidebar a.active,
+.topbar-nav a.active {
+  color: #000;
+  font-weight: 500;
+}
+
+.sidebar a,
+.topbar-nav a {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+
+
+.menu-btn {
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* Base */
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #111;
+  background: #ffffff;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 290px;
+  height: 100vh;
+  padding: 90px 34px;
+  box-sizing: border-box;
+}
+
+.section {
+  margin-bottom: 32px;
+}
+
+.label {
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+/* Shift sidebar content to the right */
+.sidebar .section {
+  padding-left: 100px;   /* adjust: 8–20px */
+}
+
+#name{
+  font-size: 48px; /*inccrease the size of name*/
+  color: rgb(26, 32, 44);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar a {
+  display: block;
+  color: #4a5d73;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  padding: 2px 0;
+  opacity: 0.7;
+  transition: color 0.2s ease, opacity 0.2s ease;
+  font-size: 18px;
+}
+
+
+.sidebar a:hover {
+  color: #000;         /* BLACK on hover */
+  opacity: 1;
+ 
+}
+
+
+/* Main content */
+.content {
+  margin-top: 50px;
+  margin-left: 330px;
+  max-width: 720px;
+  padding: 40px 24px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 1px;
+}
+
+.content h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.content h4 {
+  font-size: 18px;
+  margin-top: 32px;
+  margin-bottom: 12px;
+
+}
+
+.content ul {
+  padding-left: 20px;
+  margin-top: 0;
+}
+
+.content li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.content a {
+  color: #3b5bcc;
+  text-decoration: none;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+.muted {
+  color: #444;
+}
+
+.topic {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+
+/* Footer text */
+.footer-text {
+  margin-top: 20px;
+}
+
+
+
+
+
+
+/* Lists */
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 720px;
+}
+
+.list li {
+    padding: 14px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.list li:last-child {
+    border-bottom: none;
+}
+
+.list a {
+    font-size: 15px;
+    color: #2f6feb;
+    text-decoration: none;
+}
+
+.list a:hover {
+    text-decoration: underline;
+}
+
+.date {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #7a7a7a;
+}
+
+
+/* Items */
+.item {
+  margin-bottom: 30px;
+}
+
+.meta {
+  font-size: 14px;
+  color: #555;
+  margin-top: -8px;
+}
+
+/* Reading pg style*/
+/* Page container */
+.reading-page {
+    max-width: 720px;
+    margin-left: 330px;
+    padding: 48px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Header */
+.reading-header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.reading-header p {
+    color: #777;
+    margin-bottom: 48px;
+}
+
+/* Book card */
+.book {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 48px;
+    
+}
+
+/* Book image */
+.book img {
+    width: 120px;
+    height: 160px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+
+    object-fit: cover;
+    flex-shrink: 0;   /* 🔥 MOST IMPORTANT */
+    align-self: flex-start;
+
+
+}
+
+
+/* Content */
+.book-body h2 {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.author {
+    font-size: 14px;
+    color: #888;
+}
+
+.meta {
+    font-size: 13px;
+    color: #aaa;
+    margin: 8px 0 12px;
+}
+
+.summary {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Link */
+.thoughts-link {
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+   
+}
+
+.thoughts-link:hover {
+    opacity: 0.6;
+}
+
+
+/* Mobile */
+@media (max-width: 640px) {
+    .book {
+        flex-direction: column;
+    }
+
+    .book img {
+        width: 100px;
+        height: 140px;
+    }
+}
+
+
+
+/*-------------------*/
+
+
+/* Mobile view */
+@media (max-width: 768px) {
+
+  .topbar {
+    display: flex;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 56px);
+    background: white;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    border-right: none;
+    z-index: 999;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .content {
+    margin-left: 0;
+    padding-top: 80px;
+  }
+}
+
+/*top bar and side bar active link logic*/
+
+/* sidebar */
+
+.sidebar a.active {
+    color: #000;
+}
+
+
+.topbar-nav a.active {
+    border-bottom: 2px solid #000;
+}
+
+/*writing > article style*/
+.article h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.article .date {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.article p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.article blockquote {
+    margin: 30px 0;
+    padding-left: 20px;
+    border-left: 4px solid #000;
+    font-style: italic;
+}
+
+.author {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #888;
+}
+
+/*Deep dive reports style */
+.deep-dive-article h1 {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.deep-dive-article .meta {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.deep-dive-article .intro {
+    font-size: 19px;
+    margin-bottom: 40px;
+}
+
+.deep-dive-article section {
+    margin-bottom: 40px;
+}
+
+.deep-dive-article h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.deep-dive-article p,
+.deep-dive-article li {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.deep-dive-article blockquote {
+    border-left: 4px solid #000;
+    padding-left: 18px;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
