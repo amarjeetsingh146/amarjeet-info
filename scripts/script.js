@@ -3,7 +3,7 @@ function toggleMenu() {
     sidebar.classList.toggle("open");
 }
 
-const links = document.querySelectorAll("nav a, .sidebar a");
+const links = document.querySelectorAll("a[data-section]");
 
 // Normalize current path
 let currentPath = window.location.pathname;
@@ -27,7 +27,12 @@ links.forEach(link => {
     // OTHER PAGES: folder-based match
     const linkFolder = linkPath.substring(0, linkPath.lastIndexOf("/") + 1);
 
-    if (currentPath.startsWith(linkFolder)) {
-        link.classList.add("active");
-    }
+    // if (currentPath.startsWith(linkFolder)) {
+    //     link.classList.add("active");
+    // }
+
+    if (currentPath.includes(`/${link.dataset.section}/`)) {
+    link.classList.add("active");
+}
+
 });

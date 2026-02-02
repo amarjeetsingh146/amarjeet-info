@@ -19,7 +19,7 @@ body {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 16px;
   line-height: 1;
-  color: #222;
+  /* color: #222; */
 }
 
 /* Sidebar links */
@@ -367,8 +367,14 @@ body {
 }
 
 
+.sidebar a.active,
 .topbar-nav a.active {
-    border-bottom: 2px solid #000;
+  color: #000;
+  opacity: 1;
+}
+
+.topbar-nav a {
+  display: inline-block;
 }
 
 /*writing > article style*/
