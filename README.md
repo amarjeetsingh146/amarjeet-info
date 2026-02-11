@@ -30,7 +30,7 @@ This website serves as a central place to showcase projects, research interests,
 
 ---
 
-## 🛠️ Tech Stack (Example)
+## 🛠️ Tech Stack
 
 > Update this section based on your actual implementation
 
