@@ -23,14 +23,14 @@ This website serves as a central place to showcase projects, research interests,
 * Personal portfolio and profile
 * Project showcase with descriptions
 * Research & learning sections
-* Blog / writing section (optional)
+* Blog / writing section 
 * Contact information and social links
 * Responsive design (mobile + desktop)
 * SEO‑friendly structure
 
 ---
 
-## 🛠️ Tech Stack (Example)
+## 🛠️ Tech Stack
 
 > Update this section based on your actual implementation
 
