@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  a, button {
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
 @layer components {
   /* Writing Articles Layout & Typography */
   .article {
@@ -39,5 +45,15 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
   }
 }

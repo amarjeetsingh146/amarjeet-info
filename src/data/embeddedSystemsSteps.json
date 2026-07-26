@@ -1,0 +1,22 @@
+[
+  { "id": "intro-embedded", "stepNumber": 1, "title": "Introduction to Embedded Systems" },
+  { "id": "electronics-fundamentals", "stepNumber": 2, "title": "Electronics Fundamentals" },
+  { "id": "stm32-architecture", "stepNumber": 3, "title": "STM32 Architecture" },
+  { "id": "stm32-development-environment", "stepNumber": 4, "title": "STM32 Development Environment" },
+  { "id": "gpio-digital-io", "stepNumber": 5, "title": "GPIO & Digital I/O" },
+  { "id": "timers-pwm", "stepNumber": 6, "title": "Timers & PWM" },
+  { "id": "uart-communication", "stepNumber": 7, "title": "UART Communication" },
+  { "id": "spi-communication", "stepNumber": 8, "title": "SPI Communication" },
+  { "id": "i2c-communication", "stepNumber": 9, "title": "I2C Communication" },
+  { "id": "adc-dac", "stepNumber": 10, "title": "ADC & DAC" },
+  { "id": "interrupts-dma", "stepNumber": 11, "title": "Interrupts & DMA" },
+  { "id": "real-time-systems", "stepNumber": 12, "title": "Real-Time Systems" },
+  { "id": "sensor-integration", "stepNumber": 13, "title": "Sensor Integration" },
+  { "id": "flight-control-fundamentals", "stepNumber": 14, "title": "Flight Control Fundamentals" },
+  { "id": "pid-controller", "stepNumber": 15, "title": "PID Controller" },
+  { "id": "imu-sensor-fusion", "stepNumber": 16, "title": "IMU & Sensor Fusion" },
+  { "id": "esc-brushless-motors", "stepNumber": 17, "title": "ESC & Brushless Motors" },
+  { "id": "drone-flight-controller", "stepNumber": 18, "title": "Drone Flight Controller" },
+  { "id": "rtos-freertos", "stepNumber": 19, "title": "RTOS (FreeRTOS)" },
+  { "id": "final-drone-project", "stepNumber": 20, "title": "Final Drone Project" }
+]

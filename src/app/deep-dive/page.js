@@ -23,13 +23,15 @@ export default function DeepDives() {
 
           <div className="flex flex-wrap items-center gap-6">
             <Link
-              href="#"
+              href="/deep-dive/ai-agents"
               className="text-[16px] text-[#4b86b4] hover:underline decoration-1 underline-offset-4"
             >
               Research
             </Link>
             <Link
-              href="#"
+              href="https://github.com/amarjeetsingh146"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-[16px] text-[#4b86b4] hover:underline decoration-1 underline-offset-4"
             >
               GitHub
@@ -43,20 +45,20 @@ export default function DeepDives() {
             <h2 className="text-[20px] font-bold text-[#111]">Embedded Systems</h2>
             <span className="text-[14px] text-[#888] ">[In Progress]</span>
           </div>
-          
+
           <p className="text-[16px] text-[#555] leading-[1.4] mb-5">
             Studying STM32 microcontrollers, embedded firmware, hardware interfaces, and real-time systems for autonomous robotics and flight control.
           </p>
-          
+
           <div className="flex flex-wrap items-center gap-6">
-            <Link 
-              href="#" 
+            <Link
+              href="/deep-dive/embedded-systems"
               className="text-[16px] text-[#4b86b4] hover:underline decoration-1 underline-offset-4"
             >
               Research
             </Link>
-            <Link 
-              href="#" 
+            <Link
+              href="https://github.com/amarjeetsingh146"
               className="text-[16px] text-[#4b86b4] hover:underline decoration-1 underline-offset-4"
             >
               GitHub

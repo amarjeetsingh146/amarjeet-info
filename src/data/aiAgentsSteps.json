@@ -1,0 +1,17 @@
+[
+  { "id": "foundations",         "stepNumber": 1,  "title": "Foundations",          "summary": "Core CS and ML prerequisites needed before diving into AI agents." },
+  { "id": "llms",                "stepNumber": 2,  "title": "LLMs",                 "summary": "How Large Language Models are trained, how they work, and what their limits are." },
+  { "id": "prompt-engineering",  "stepNumber": 3,  "title": "Prompt Engineering",   "summary": "The craft of writing prompts that reliably produce structured, useful LLM outputs." },
+  { "id": "agent-reasoning",     "stepNumber": 4,  "title": "Agent Reasoning",      "summary": "How agents think: decision loops, self-reflection, and multi-step reasoning." },
+  { "id": "planning",            "stepNumber": 5,  "title": "Planning",             "summary": "Task decomposition strategies: how agents break complex goals into executable steps." },
+  { "id": "tool-use",            "stepNumber": 6,  "title": "Tool Use",             "summary": "Giving agents the ability to call external APIs, run code, and interact with the world." },
+  { "id": "memory",              "stepNumber": 7,  "title": "Memory",               "summary": "Short-term, long-term, and episodic memory architectures for persistent agents." },
+  { "id": "rag",                 "stepNumber": 8,  "title": "RAG",                  "summary": "Retrieval-Augmented Generation: grounding agents in external knowledge bases." },
+  { "id": "mcp",                 "stepNumber": 9,  "title": "MCP",                  "summary": "Model Context Protocol: the standard for agent-tool integration." },
+  { "id": "multi-agent",         "stepNumber": 10, "title": "Multi-Agent Systems",  "summary": "Orchestrating networks of specialized agents that collaborate and debate." },
+  { "id": "evaluation",          "stepNumber": 11, "title": "Evaluation",           "summary": "Measuring agent performance: benchmarks, LLM-as-judge, and automated testing." },
+  { "id": "safety",              "stepNumber": 12, "title": "Safety",               "summary": "Aligning agents with human values, preventing misuse, and building safe-by-design systems." },
+  { "id": "autonomous-workflows","stepNumber": 13, "title": "Autonomous Workflows", "summary": "End-to-end production agent pipelines: scheduling, monitoring, and reliability." },
+  { "id": "research-papers",     "stepNumber": 14, "title": "Research Papers",      "summary": "The seminal papers that define the current frontier of AI agent research." },
+  { "id": "projects",            "stepNumber": 15, "title": "Projects",             "summary": "Build real, portfolio-worthy AI agent projects that demonstrate mastery." }
+]
