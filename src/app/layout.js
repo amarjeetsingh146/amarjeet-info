@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
       </head>
-      <body className={`${lora.variable} font-lora text-[16px] leading-relaxed text-[#222]`}>
+      <body suppressHydrationWarning className={`${lora.variable} font-lora text-[16px] leading-relaxed text-[#222]`}>
         <Navigation>
           {children}
         </Navigation>

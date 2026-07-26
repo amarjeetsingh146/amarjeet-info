@@ -71,7 +71,7 @@ export const books = [
     meta: "★★★★☆",
     readDate: "November 8, 2024",
     rating: "8/10",
-    summary: "Zero to One by Peter Thiel focuses on creating unique value through innovation. The book emphasizes building something new rather than copying existing ideas. It highlights the importance of monopoly-like businesses for long-term success. Thiel stresses thinking independently and questioning conventional wisdom. Overall, the book encourages bold thinking to create breakthrough startups.",
+    summary: "Zero to One by Peter Thiel focuses on creating unique value through innovation. The book emphasizes building something new rather than copying existing ideas. It highlights the importance of monopoly like businesses for long-term success. Thiel stresses thinking independently and questioning conventional wisdom. Overall, the book encourages bold thinking to create breakthrough startups.",
     coverImg: "https://upload.wikimedia.org/wikipedia/en/d/d3/Zero_to_One.jpg",
     link: "/reading/thoughts/zer-to-one",
     spineColor: "#1A5688", // Blue
@@ -84,7 +84,7 @@ export const books = [
     meta: "★★★★★",
     readDate: "January 4, 2025",
     rating: "9/10",
-    summary: "White Nights is a profound exploration of loneliness and the fleeting nature of human connection. Dostoevsky captures the essence of a dreamer—someone who lives more in their own mind than in reality. The protagonist's brief encounter with Nastenka brings a sudden, blinding light to his isolated world. What resonates most is the vulnerability of opening up to another person, only to face the inevitable pain when they return to their own life. The story doesn't end with bitterness, but with a sense of gratitude for having felt something real. It reminds us that even a single moment of true connection can be enough to sustain a soul for a lifetime. This short story taught me that melancholy and beauty are often inseparable. Living entirely in dreams is safe, but it is the heartbreak of reality that makes us truly human.",
+    summary: "White Nights is a profound exploration of loneliness and the fleeting nature of human connection. Dostoevsky captures the essence of a dreamer someone who lives more in their own mind than in reality. The protagonist's brief encounter with Nastenka brings a sudden, blinding light to his isolated world. What resonates most is the vulnerability of opening up to another person, only to face the inevitable pain when they return to their own life. The story doesn't end with bitterness, but with a sense of gratitude for having felt something real. It reminds us that even a single moment of true connection can be enough to sustain a soul for a lifetime. This short story taught me that melancholy and beauty are often inseparable. Living entirely in dreams is safe, but it is the heartbreak of reality that makes us truly human.",
     coverImg: "https://covers.openlibrary.org/b/id/15136149-L.jpg",
     link: "/reading/thoughts/white-nights",
     spineColor: "#080f17ff",
@@ -188,7 +188,7 @@ export const books = [
     meta: "★★★★★",
     readDate: "June 15, 2026",
     rating: "7/10",
-    summary: "Walter Isaacson’s biography provides an unfiltered look into the mind of one of our era's most polarizing figures. It explores the intense drive, the chaotic management style, and the sheer audacity of Musk's ambitions. What struck me is how his traumatic childhood experiences forged his relentless work ethic and emotional detachment. The book doesn't glorify him; it shows the immense collateral damage his intensity causes to those around him. Yet, it also highlights the undeniable reality that his refusal to accept conventional limits has pushed humanity forward. It made me question the nature of genius and whether such world-changing innovation requires a certain level of madness. Musk's approach to risk—willing to lose everything for a grand vision—is both terrifying and awe-inspiring. It’s a fascinating study of how extreme determination and a lack of empathy can coexist in a singular visionary. The story challenges the balance between professional greatness and personal well-being.",
+    summary: "Walter Isaacson’s biography provides an unfiltered look into the mind of one of our era's most polarizing figures. It explores the intense drive, the chaotic management style, and the sheer audacity of Musk's ambitions. What struck me is how his traumatic childhood experiences forged his relentless work ethic and emotional detachment. The book doesn't glorify him; it shows the immense collateral damage his intensity causes to those around him. Yet, it also highlights the undeniable reality that his refusal to accept conventional limits has pushed humanity forward. It made me question the nature of genius and whether such world changing innovation requires a certain level of madness. Musk's approach to risk willing to lose everything for a grand vision is both terrifying and awe-inspiring. It’s a fascinating study of how extreme determination and a lack of empathy can coexist in a singular visionary. The story challenges the balance between professional greatness and personal well being.",
     coverImg: "https://covers.openlibrary.org/b/isbn/9781982181284-L.jpg",
     link: "/reading/thoughts/elon-musk",
     spineColor: "#111827", // Very dark gray/black
