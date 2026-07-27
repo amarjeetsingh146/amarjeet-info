@@ -1,8 +1,6 @@
 import Link from 'next/link';
 
-export const metadata = {
-  title: 'Amarjeet Singh | Home',
-};
+
 
 export default function Home() {
   return (
