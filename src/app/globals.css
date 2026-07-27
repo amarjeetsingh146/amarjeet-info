@@ -11,7 +11,7 @@
 @layer components {
   /* Writing Articles Layout & Typography */
   .article {
-    @apply mt-[50px] md:ml-[330px] max-w-[680px] pt-[80px] md:pt-[40px] px-[24px] font-sans tracking-wide pb-24;
+    @apply mt-[50px] md:ml-[480px] max-w-[680px] pt-[80px] md:pt-[40px] px-[24px] font-sans tracking-wide pb-24;
   }
   .article .back-btn {
     @apply inline-block text-[15px] text-[#7a7a7a] no-underline hover:text-black mb-8 transition-colors;

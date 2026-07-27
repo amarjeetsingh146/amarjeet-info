@@ -21,7 +21,7 @@ export default function Writing() {
   const thoughts = getAllThoughts();
 
   return (
-    <main className="mt-[50px] md:ml-[330px] max-w-[720px] pt-[80px] md:pt-[40px] px-[24px] font-lora tracking-[1px]">
+    <main className="mt-[50px] md:ml-[480px] max-w-[720px] pt-[80px] md:pt-[40px] px-[24px] font-lora tracking-[1px]">
       <ul className="list-none p-0 m-0 max-w-[720px]">
         {/* Auto-generated from MDX files in src/content/thoughts/ */}
         {thoughts.map(({ slug, title, date }) => (

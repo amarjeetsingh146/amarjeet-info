@@ -6,7 +6,7 @@ export const metadata = {
 
 export default function DeepDives() {
   return (
-    <main className="mt-[50px] md:ml-[330px] max-w-[720px] pt-[80px] md:pt-[40px] px-[24px] font-lora">
+    <main className="mt-[50px] md:ml-[480px] max-w-[720px] pt-[80px] md:pt-[40px] px-[24px] font-lora">
 
       <div className="flex flex-col">
 

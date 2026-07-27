@@ -13,7 +13,7 @@ export default async function AiAgentsPage({ searchParams }) {
   const stepId = params?.step || 'foundations';
 
   return (
-    <div className="mt-[56px] md:ml-[290px]">
+    <div className="mt-[56px] md:ml-[440px]">
       <ResearchRoadmap
         steps={aiAgentsSteps}
         activeStepId={stepId}

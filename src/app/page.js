@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="mt-[50px] md:ml-[330px] max-w-[720px] pt-[80px] md:pt-[40px] px-[24px] font-lora tracking-[1px]">
+    <main className="mt-[50px] md:ml-[480px] max-w-[720px] pt-[80px] md:pt-[40px] px-[24px] font-lora tracking-[1px]">
       <h1 style={{ fontStyle: 'normal', fontWeight: 700, fontSize: '48px', lineHeight: '72px' }} className="text-[#1a202c] font-lora mb-[30px]">Amarjeet Singh</h1>
 
       <h4 className="text-[18px] mt-[32px] mb-[12px] font-bold">Some things about me:</h4>

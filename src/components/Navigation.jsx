@@ -32,7 +32,7 @@ export default function Navigation({ children }) {
         <button className="text-[22px] bg-transparent border-none cursor-pointer" onClick={toggleMenu}>☰</button>
       </header>
 
-      <aside className={`fixed top-0 left-0 w-[290px] h-screen pt-[90px] pb-[90px] pr-[34px] pl-[134px] bg-white z-[999] transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : 'max-md:-translate-x-full'}`} id="sidebar">
+      <aside className={`fixed top-0 left-0 w-[440px] h-screen pt-[90px] pb-[90px] pr-[34px] pl-[284px] bg-white z-[999] transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : 'max-md:-translate-x-full'}`} id="sidebar">
         <div className="mb-[32px]">
           <div className="text-[15px] tracking-[1px] mb-[10px] text-black">
           <h5 className="font-bold">NAVIGATION</h5>
