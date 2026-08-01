@@ -1,0 +1,56 @@
+Step #4 ✅: Seeing the history of machine learning through 7 bottlenecks
+
+The most interesting part of my machine learning deep-dive came from spotting a pattern that kept repeating across nearly every major breakthrough.
+
+![Machine Learning Bottlenecks](/assets/images/constraints.png)
+
+Over time, the field did not progress in a random way. It kept moving forward by weakening a small set of bottlenecks that limit what machine learning systems can do:
+
+(1) data<br />
+(2) parameters<br />
+(3) optimization & regularization<br />
+(4) architecture<br />
+(5) compute<br />
+(6) compute efficiency<br />
+(7) energy<br />
+
+Once I started thinking this way, the history of machine learning made much more sense.
+
+Every important advance can be seen as a way of pushing one of these limits upward, which allowed models to become more accurate, more stable, more scalable, and more useful in practice.
+
+At a high level, machine learning is about building models that can capture patterns in the real world and then training them well enough to reflect those patterns reliably.
+
+In that sense, the quality of a machine learning system depends on how well it can fit reality without collapsing into noise, memorization, or inefficiency.
+
+And each of the 7 bottlenecks plays a role in shaping that outcome:
+
+(1) Data — A model can only learn what the data makes visible. Better data, more diverse data, and larger datasets consistently unlock better performance.
+
+(2) Parameters — A model’s capacity is limited by how much it can represent. More parameters often mean more expressiveness, but only if the rest of the system can support it.
+
+(3) Optimization & Regularization — A model may have enough capacity in theory, but it still has to train successfully. Good optimization and regularization decide whether that capacity becomes useful or wasted.
+
+(4) Architecture — The structure of a model shapes what kinds of patterns it can learn efficiently. Different architectures embody different inductive biases.
+
+(5) Compute — Training larger and better models depends on the amount of computation available.
+
+(6) Compute Efficiency — It is not enough to have compute. The software and implementation details decide how effectively that compute is turned into learning progress.
+
+(7) Energy — At the largest scale, training is bounded by how much power can actually be supplied to the hardware.
+
+Thinking about machine learning this way also changes how you think about the future.
+
+Right now, a lot of attention is still centered on scaling models, data, and compute. But that is not because scaling is the only path forward. It is because current systems still have room to grow before they fully absorb the information available in the data.
+
+At some point, the bottleneck may shift again. Data quality, energy limits, or efficiency could become more important than raw scale. When that happens, the next wave of progress will probably come from a different balance of these same constraints.
+
+For me, this became the cleanest way to understand machine learning progress:
+
+progress happens when one of these ceilings moves higher.
+
+That framing also helped me think more clearly about the bigger questions:<br />
+(1) How does machine learning progress actually happen?<br />
+(2) Where do new ideas usually come from?<br />
+(3) Why do the dominant narratives in ML keep changing?<br />
+(4) What does machine learning teach us about intelligence itself?<br />
+(5) What kind of systems will shape the next phase of the field?

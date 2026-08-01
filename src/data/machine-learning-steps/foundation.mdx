@@ -1,0 +1,113 @@
+Step #1 ✅: Learning the fundamentals of machine learning from papers
+
+I wanted to learn about the fundamentals of machine learning directly from the source of progress: the critical papers and ideas that took us from simple statistical methods to the models and systems we use today.
+
+I suspected that this would reveal broader trends and intuitions that are not obvious when learning about ML only through courses, tutorials, or simplified public narratives.
+
+![Machine Learning Foundation](/assets/images/foundation.png)
+
+This approach turned out to be critical.
+
+I focused on learning about the following trail of breakthroughs that led us to where we are today:
+
+(the repo later in this thread includes my in-depth explanations of core intuitions, math, and implementations (when relevant) for each of these, for anyone curious)
+
+Early Foundations of Machine Learning
+
+> Linear Regression - The simplest supervised learning model, and one of the first places where you learn how machines fit patterns from data.<br />
+> Logistic Regression - The classic model that turned prediction into classification, and became one of the most important baselines in ML.<br />
+> Perceptron - One of the earliest learning algorithms, showing how a model could adjust itself using mistakes.<br />
+> Decision Trees - A highly interpretable approach that made machine learning feel practical and intuitive.<br />
+> Naive Bayes - A simple probabilistic model that showed how surprisingly far strong assumptions can take you.<br />
+> K-Nearest Neighbors - A lazy learning method that taught the value of similarity-based reasoning.<br />
+
+Core Supervised Learning
+
+> Support Vector Machines - A powerful method that introduced the idea of maximizing margins for better generalization.<br />
+> Kernel Methods - The trick that let linear models behave like nonlinear ones without explicitly transforming everything by hand.<br />
+> Random Forests - An ensemble method that made decision trees far more stable and useful in real-world problems.<br />
+> Gradient Boosting - One of the most important ideas in classical ML, where weak learners are combined into a strong model.<br />
+> XGBoost - The optimized boosting framework that became a dominant force in tabular machine learning.<br />
+> LightGBM - A faster and more scalable boosting method that pushed tree-based learning even further.<br />
+
+Optimization & Generalization
+
+> Gradient Descent - The foundational optimization method behind nearly all learning algorithms.<br />
+> Stochastic Gradient Descent - A practical version of gradient descent that made learning scalable to large datasets.<br />
+> Regularization - The key idea that helped models generalize instead of memorizing.<br />
+> L1 Regularization - Encouraged sparsity and feature selection.<br />
+> L2 Regularization - Penalized large weights and made models more stable.<br />
+> Early Stopping - A simple but powerful way to prevent overfitting.<br />
+> Cross-Validation - A core evaluation method that taught us how to estimate generalization more reliably.<br />
+> Bias-Variance Tradeoff - One of the most important ideas in all of machine learning.<br />
+
+Feature Engineering & Representation
+
+> Feature Scaling - A small but essential step that makes many algorithms work properly.<br />
+> One-Hot Encoding - The standard way to make categorical variables usable by ML models.<br />
+> Standardization - A necessary preprocessing step for many distance-based and gradient-based methods.<br />
+> PCA - A classic dimensionality reduction technique that showed how to compress data while keeping the most important structure.<br />
+> t-SNE - A visualization method that made high-dimensional data easier to understand.<br />
+> Feature Selection - The practice of keeping only the most useful inputs and removing noise.<br />
+
+Unsupervised Learning
+
+> Clustering - The introduction to discovering structure without labels.<br />
+> K-Means - The classic clustering algorithm that made unsupervised learning feel approachable.<br />
+> Hierarchical Clustering - A tree-based way to group data at different levels of detail.<br />
+> Gaussian Mixture Models - A probabilistic clustering approach that modeled uncertainty more naturally.<br />
+> Anomaly Detection - A critical idea for spotting rare, unusual, or suspicious patterns in data.<br />
+
+Probabilistic Machine Learning
+
+> Bayes’ Theorem - The core idea behind reasoning under uncertainty.<br />
+> Maximum Likelihood Estimation - A standard principle for choosing model parameters.<br />
+> Maximum A Posteriori Estimation - A Bayesian version of parameter estimation that includes prior knowledge.<br />
+> Hidden Markov Models - A classic sequence model that helped ML handle temporal structure.<br />
+> Conditional Random Fields - A structured prediction model that improved sequence labeling tasks.<br />
+
+Model Evaluation
+
+> Accuracy - The simplest metric, but often misleading on its own.<br />
+> Precision & Recall - The metrics that matter when false positives and false negatives have different costs.<br />
+> F1 Score - A balanced measure for classification performance.<br />
+> ROC-AUC - A useful way to evaluate ranking quality across thresholds.<br />
+> Confusion Matrix - A clear way to understand where a classifier is making mistakes.<br />
+> Calibration - The idea that good predictions should also be trustworthy.<br />
+
+Ensembles & Practical ML
+
+> Bagging - Reduced variance by training multiple models on different samples.<br />
+> Boosting - Turned many weak models into one strong predictor.<br />
+> Random Subspace Methods - Added diversity by training models on different feature subsets.<br />
+> Model Averaging - One of the simplest ways to improve robustness.<br />
+> Stacking - A meta-learning approach that combines the strengths of multiple models.<br />
+
+Modern Machine Learning
+
+> Gradient Boosted Decision Trees - The workhorse of tabular machine learning in industry.<br />
+> AutoML - The push toward automating model selection, tuning, and feature processing.<br />
+> Neural Networks - The bridge between classical machine learning and deep learning.<br />
+> Representation Learning - The idea that models can learn useful features instead of relying entirely on manual engineering.<br />
+> Transfer Learning - Reusing knowledge from one task to improve another.<br />
+> Online Learning - A practical setup where models keep adapting as new data arrives.<br />
+> Active Learning - A strategy for labeling only the most informative examples.<br />
+> Reinforcement Learning - The setting where agents learn from reward rather than fixed labels.<br />
+
+The reason this sequence mattered to me is that it showed machine learning as a progression of ideas, not just a list of algorithms.
+
+At first, ML looks like a collection of disconnected models:
+linear regression, trees, SVMs, clustering, boosting, and so on.
+
+But once you study the papers and ideas in order, you start to see the deeper story:
+
+Machine learning gradually became much more than a collection of algorithms. How models learn from data, avoid overfitting, generalize to unseen examples, transform raw data into useful representations, and ultimately laid the foundation for deep learning and modern AI.
+
+
+That was the real lesson.
+
+Machine learning is not just about choosing the right algorithm.
+It is about understanding the relationship between data, assumptions, optimization, and generalization.
+
+That is what I wanted to learn from the papers.
+
