@@ -11,6 +11,7 @@ module.exports = {
         sans: ['"Inter Display"', '"Inter Display Placeholder"', 'sans-serif'],
         mono: ['"DM Sans"', 'sans-serif'],
         lora: ['var(--font-lora)', 'Georgia', 'serif'],
+        'space-grotesk': ['var(--font-space-grotesk)', 'sans-serif'],
       },
     },
   },

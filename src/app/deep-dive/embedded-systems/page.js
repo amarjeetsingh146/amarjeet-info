@@ -13,7 +13,7 @@ export default async function EmbeddedSystemsPage({ searchParams }) {
   const stepId = params?.step || 'intro-embedded';
 
   return (
-    <div className="mt-[56px] md:ml-[440px]">
+    <div className="max-md:mt-[64px] md:mt-0 md:ml-[440px]">
       <ResearchRoadmap
         steps={embeddedSystemsSteps}
         activeStepId={stepId}

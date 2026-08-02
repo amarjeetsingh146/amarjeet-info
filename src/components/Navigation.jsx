@@ -23,14 +23,15 @@ export default function Navigation({ children }) {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 h-[56px] bg-white border-b border-gray-200 shadow-sm px-4 items-center justify-between z-[1000] hidden max-md:flex">
+      {/* Mobile top bar — height: 64px to match Adam's h-16 */}
+      <header className="fixed top-0 left-0 right-0 h-[64px] bg-white border-b border-[#e2e8f0] px-4 items-center justify-between z-[1000] hidden max-md:flex">
         <nav className="flex gap-2 sm:gap-4 overflow-x-auto no-scrollbar">
-          <Link href="/" className={`inline-block py-2 px-2 sm:px-4 text-[#4a5d73] no-underline font-normal transition-all duration-200 text-[15px] sm:text-[16px] tracking-[0.01em] whitespace-nowrap ${isActive('/', true) ? 'text-black font-medium' : 'hover:text-black'}`}>Home</Link>
-          <Link href="/reading" className={`inline-block py-2 px-2 sm:px-4 text-[#4a5d73] no-underline font-normal transition-all duration-200 text-[15px] sm:text-[16px] tracking-[0.01em] whitespace-nowrap ${isActive('/reading') ? 'text-black font-medium' : 'hover:text-black'}`}>Reading</Link>
-          <Link href="/writing" className={`inline-block py-2 px-2 sm:px-4 text-[#4a5d73] no-underline font-normal transition-all duration-200 text-[15px] sm:text-[16px] tracking-[0.01em] whitespace-nowrap ${isActive('/writing') ? 'text-black font-medium' : 'hover:text-black'}`}>Writing</Link>
+          <Link href="/" className={`inline-block py-2 px-2 sm:px-4 no-underline font-normal transition-all duration-200 text-[16px] whitespace-nowrap ${isActive('/', true) ? 'text-black font-medium' : 'text-[#718096] hover:text-black'}`}>Home</Link>
+          <Link href="/reading" className={`inline-block py-2 px-2 sm:px-4 no-underline font-normal transition-all duration-200 text-[16px] whitespace-nowrap ${isActive('/reading') ? 'text-black font-medium' : 'text-[#718096] hover:text-black'}`}>Reading</Link>
+          <Link href="/writing" className={`inline-block py-2 px-2 sm:px-4 no-underline font-normal transition-all duration-200 text-[16px] whitespace-nowrap ${isActive('/writing') ? 'text-black font-medium' : 'text-[#718096] hover:text-black'}`}>Writing</Link>
         </nav>
-        <button 
-          className="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-[#e8edf2] rounded-md text-[#333] cursor-pointer focus:outline-none ml-2" 
+        <button
+          className="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-[#f1f3f5] rounded-md text-[#333] cursor-pointer focus:outline-none ml-2"
           onClick={toggleMenu}
           aria-label="Toggle navigation menu"
         >
@@ -42,30 +43,42 @@ export default function Navigation({ children }) {
 
       {/* Mobile backdrop */}
       {isMenuOpen && (
-        <div 
-          className="fixed inset-0 bg-black/10 z-[998] md:hidden" 
+        <div
+          className="fixed inset-0 bg-black/10 z-[998] md:hidden"
           onClick={() => setIsMenuOpen(false)}
         />
       )}
 
-      <aside className={`fixed bg-white z-[999] md:top-0 md:left-0 md:h-screen md:w-[440px] md:pt-[90px] md:pb-[90px] md:pr-[34px] md:pl-[284px] max-md:top-[64px] max-md:left-auto max-md:right-4 max-md:h-auto max-md:w-[240px] max-md:rounded-xl max-md:shadow-2xl max-md:border max-md:border-gray-100 max-md:pt-5 max-md:pb-5 max-md:px-6 max-md:transition-all max-md:duration-200 max-md:origin-top-right ${isMenuOpen ? 'max-md:opacity-100 max-md:scale-100 max-md:visible' : 'max-md:opacity-0 max-md:scale-95 max-md:invisible max-md:pointer-events-none'}`} id="sidebar">
-        <div className="mb-[32px]">
-          <div className="text-[14px] tracking-[1px] mb-[12px] text-black">
-            <h5 className="font-bold">NAVIGATION</h5>
-          </div>
-          <Link href="/" className={`block font-lora text-[#64748b] tracking-[1px] mb-[12px] opacity-90 transition-all duration-200 text-[18px] ${isActive('/', true) ? 'text-black font-medium opacity-100' : 'hover:text-black hover:opacity-100'}`}>Home</Link>
-          <Link href="/reading" className={`block font-lora text-[#64748b] tracking-[1px] mb-[12px] opacity-90 transition-all duration-200 text-[18px] ${isActive('/reading') ? 'text-black font-medium opacity-100' : 'hover:text-black hover:opacity-100'}`}>Reading</Link>
-          <Link href="/writing" className={`block font-lora text-[#64748b] tracking-[1px] mb-[12px] opacity-90 transition-all duration-200 text-[18px] ${isActive('/writing') ? 'text-black font-medium opacity-100' : 'hover:text-black hover:opacity-100'}`}>Writing</Link>
-          <Link href="/deep-dive" className={`block font-lora text-[#64748b] tracking-[1px] mb-[12px] opacity-90 transition-all duration-200 text-[18px] ${isActive('/deep-dive') ? 'text-black font-medium opacity-100' : 'hover:text-black hover:opacity-100'}`}>Deep Dives</Link>
+      {/* Sidebar — matches Adam's layout: fixed left, positioned to the left of content */}
+      <aside
+        className={`fixed bg-white z-[999]
+          md:top-0 md:left-0 md:h-screen md:w-[440px]
+          md:pt-[90px] md:pb-[90px] md:pr-[34px] md:pl-[284px]
+          max-md:top-[64px] max-md:left-auto max-md:right-4 max-md:h-auto
+          max-md:w-[240px] max-md:rounded-xl max-md:shadow-2xl
+          max-md:border max-md:border-gray-100
+          max-md:pt-5 max-md:pb-5 max-md:px-6
+          max-md:transition-all max-md:duration-200 max-md:origin-top-right
+          ${isMenuOpen ? 'max-md:opacity-100 max-md:scale-100 max-md:visible' : 'max-md:opacity-0 max-md:scale-95 max-md:invisible max-md:pointer-events-none'}`}
+        id="sidebar"
+      >
+        {/* NAVIGATION group — matches Adam's VStack spacing={10} = 40px between groups */}
+        <div className="mb-[40px]">
+          {/* Label: Adam uses fontWeight="bold" fontSize="smaller" */}
+          <p className="text-[11px] font-bold tracking-[0.12em] uppercase text-black mb-[12px]">NAVIGATION</p>
+          {/* Links: Adam uses fontSize="lg" (18px), spacing={3} = 12px between items */}
+          <Link href="/" className={`block text-[18px] mb-[12px] no-underline transition-colors duration-200 ${isActive('/', true) ? 'text-black' : 'text-[#718096] hover:text-black'}`}>Home</Link>
+          <Link href="/reading" className={`block text-[18px] mb-[12px] no-underline transition-colors duration-200 ${isActive('/reading') ? 'text-black' : 'text-[#718096] hover:text-black'}`}>Reading</Link>
+          <Link href="/writing" className={`block text-[18px] mb-[12px] no-underline transition-colors duration-200 ${isActive('/writing') ? 'text-black' : 'text-[#718096] hover:text-black'}`}>Writing</Link>
+          <Link href="/deep-dive" className={`block text-[18px] mb-[12px] no-underline transition-colors duration-200 ${isActive('/deep-dive') ? 'text-black' : 'text-[#718096] hover:text-black'}`}>Deep Dives</Link>
         </div>
 
-        <div className="mb-[32px]">
-          <div className="text-[14px] tracking-[1px] mb-[12px] text-black">
-            <h5 className="font-bold">FIND ME ON</h5>
-          </div>
-          <a href="https://x.com/amarjeet_076" target="_blank" rel="noopener noreferrer" className="block font-lora text-[#64748b] tracking-[1px] mb-[12px] opacity-90 transition-all duration-200 text-[18px] hover:text-black hover:opacity-100">Twitter</a>
-          <a href="https://www.linkedin.com/in/amarjeetsingh461/" target="_blank" rel="noopener noreferrer" className="block font-lora text-[#64748b] tracking-[1px] mb-[12px] opacity-90 transition-all duration-200 text-[18px] hover:text-black hover:opacity-100">Linkedin</a>
-          <a href="https://github.com/amarjeetsingh146" target="_blank" rel="noopener noreferrer" className="block font-lora text-[#64748b] tracking-[1px] mb-[12px] opacity-90 transition-all duration-200 text-[18px] hover:text-black hover:opacity-100">GitHub</a>
+        {/* FIND ME ON group */}
+        <div className="mb-[40px]">
+          <p className="text-[11px] font-bold tracking-[0.12em] uppercase text-black mb-[12px]">FIND ME ON</p>
+          <a href="https://x.com/amarjeet_076" target="_blank" rel="noopener noreferrer" className="block text-[18px] mb-[12px] text-[#718096] no-underline transition-colors duration-200 hover:text-black">Twitter</a>
+          <a href="https://www.linkedin.com/in/amarjeetsingh461/" target="_blank" rel="noopener noreferrer" className="block text-[18px] mb-[12px] text-[#718096] no-underline transition-colors duration-200 hover:text-black">LinkedIn</a>
+          <a href="https://github.com/amarjeetsingh146" target="_blank" rel="noopener noreferrer" className="block text-[18px] mb-[12px] text-[#718096] no-underline transition-colors duration-200 hover:text-black">GitHub</a>
         </div>
       </aside>
 
@@ -73,3 +86,4 @@ export default function Navigation({ children }) {
     </>
   );
 }
+

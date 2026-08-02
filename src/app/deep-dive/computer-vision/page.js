@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function ComputerVisionPage() {
   return (
-    <div className="mt-[56px] md:ml-[440px] max-w-[720px] pt-[80px] md:pt-[40px] px-[24px] font-lora">
+    <div className="page-content">
       <h2 className="text-[13px] font-bold tracking-[2px] uppercase text-[#888] mb-4">Foundations</h2>
       <div className="flex flex-wrap gap-x-6 gap-y-2">
         <Link href="/deep-dive/computer-vision/cv-fundamentals" className="inline-flex items-center gap-1 text-[14px] text-[#4b86b4] hover:underline underline-offset-4 decoration-1">Computer Vision Fundamentals <span className="text-[16px] font-bold">↗</span></Link>

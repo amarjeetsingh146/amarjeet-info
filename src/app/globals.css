@@ -7,32 +7,137 @@
     outline: none !important;
     -webkit-tap-highlight-color: transparent;
   }
+
+  /* Adam-style base typography */
+  body {
+    line-height: 1.7;
+    color: #1a202c;
+  }
 }
+
 @layer components {
-  /* Writing Articles Layout & Typography */
+  /* ─── Shared page content wrapper (Adam-style layout) ─── */
+  /* Matches Adam's Container + content area:
+     max-width ~768px, left-offset for sidebar on desktop,
+     top-margin for fixed header, generous bottom padding */
+  .page-content {
+    /* mobile: push below fixed 64px header, then add breathing room */
+    /* desktop: no fixed header — start at same 90px as sidebar nav */
+    @apply max-md:mt-[64px] max-md:pt-[32px] md:mt-0 md:pt-[90px] md:ml-[440px] max-w-[768px] px-[24px] pb-[160px];
+  }
+
+  /* ─── Page-level headings ─── */
+  /* h1 on main pages (e.g. "Amarjeet Singh") */
+  .page-content h1 {
+    @apply font-bold text-[#1a202c] mb-[24px] leading-[1.2];
+    font-size: 2.25rem; /* 36px — Adam uses display-level but controlled */
+  }
+
+  /* Section headings like "Some things about me:" */
+  .page-content h4,
+  .page-content h3,
+  .page-content h2 {
+    @apply font-bold text-[#1a202c] mt-[16px] mb-[16px];
+  }
+
+  /* ─── Body text ─── */
+  .page-content p {
+    @apply text-[16px] text-[#1a202c] leading-[1.7] mb-[12px];
+  }
+
+  /* ─── Lists ─── */
+  .page-content ul {
+    @apply pl-[20px] list-disc;
+  }
+  /* Override for plain lists (e.g. writing page) — higher specificity wins */
+  .page-content ul.writing-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .page-content li {
+    @apply mb-[12px] text-[16px] leading-[1.7] text-[#1a202c];
+  }
+
+  /* ─── Links ─── */
+  .page-content a {
+    @apply text-[#3b5bdb] no-underline hover:underline;
+  }
+
+  /* ─── Deep Dive list items (divider style) ─── */
+  .deep-dive-item {
+    @apply border-b border-[#e2e8f0] py-[16px];
+  }
+  .deep-dive-item:first-child {
+    @apply border-t border-[#e2e8f0];
+  }
+  .deep-dive-item h2 {
+    @apply text-[16px] font-bold text-[#1a202c] mb-[4px];
+  }
+  .deep-dive-item p {
+    @apply text-[14px] text-[#555] leading-[1.6] mb-[12px];
+  }
+  .deep-dive-item .links {
+    @apply flex gap-[24px] flex-wrap;
+  }
+  .deep-dive-item .links a {
+    @apply text-[14px] text-[#3b82f6] no-underline hover:underline;
+  }
+
+  /* ─── Writing list items ─── */
+  .writing-item {
+    @apply border-b border-[#e2e8f0] py-[12px];
+    list-style: none;
+  }
+  /* Adam's Chakra blue.500 = #3182CE for writing title links */
+  .writing-item a {
+    @apply block text-[16px] text-[#3182CE] no-underline hover:underline transition-colors;
+  }
+  .writing-item .meta {
+    @apply text-[13px] text-[#718096] mt-[2px];
+  }
+
+  /* ─── Writing Articles (prose) ─── */
   .article {
-    @apply mt-[50px] md:ml-[480px] max-w-[680px] pt-[80px] md:pt-[40px] px-[24px] font-sans tracking-wide pb-24;
+    @apply max-md:mt-[64px] max-md:pt-[32px] md:mt-0 md:pt-[90px] md:ml-[440px] max-w-[768px] px-[24px] pb-[160px];
   }
   .article .back-btn {
-    @apply inline-block text-[15px] text-[#7a7a7a] no-underline hover:text-black mb-8 transition-colors;
+    @apply inline-block text-[15px] text-[#718096] no-underline hover:text-black mb-[32px] transition-colors;
   }
   .article h1 {
-    @apply text-3xl md:text-4xl font-bold text-gray-900 mb-2 leading-tight tracking-tight;
+    @apply text-[2rem] font-bold text-[#1a202c] mb-[8px] leading-[1.3] mt-[16px];
   }
   .article .date {
-    @apply text-[14px] text-[#7a7a7a] mb-10;
+    @apply text-[14px] text-[#718096] mb-[40px];
   }
   .article p {
-    @apply text-[17px] text-gray-800 leading-relaxed mb-6;
+    @apply text-[16px] text-[#1a202c] leading-[1.7] mb-[12px];
+  }
+  .article h2 {
+    @apply text-[1.4rem] font-bold text-[#1a202c] mt-[16px] mb-[16px];
+  }
+  .article h3 {
+    @apply text-[1.15rem] font-bold text-[#1a202c] mt-[16px] mb-[16px];
   }
   .article strong {
-    @apply font-semibold text-gray-900;
+    @apply font-semibold text-[#1a202c];
   }
   .article blockquote {
-    @apply border-l-4 border-gray-200 pl-6 py-2 my-8 text-xl text-gray-600 italic leading-relaxed bg-gray-50/50 rounded-r-lg;
+    @apply border-l-4 border-[#e2e8f0] pl-[24px] py-[8px] my-[12px] text-[16px] text-[#4a5568] italic leading-[1.7];
   }
-  .article .author {
-    @apply mt-12 text-right text-gray-500 italic text-[16px];
+  .article ul, .article ol {
+    @apply pl-[20px] mb-[12px];
+  }
+  .article ul { @apply list-disc; }
+  .article ol { @apply list-decimal; }
+  .article li {
+    @apply mb-[6px] text-[16px] leading-[1.7] text-[#1a202c];
+  }
+  .article a {
+    @apply text-[#3b5bdb] no-underline hover:underline;
+  }
+  .article hr {
+    @apply border-[#e2e8f0] my-[40px];
   }
 }
 
