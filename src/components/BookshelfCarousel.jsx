@@ -266,7 +266,7 @@ export default function BookshelfCarousel({ books = [] }) {
             aria-label="Scroll left"
           >
             <span
-              className="pointer-events-none absolute top-0 left-0 z-50 opacity-40"
+              className="pointer-events-none absolute top-0 left-0 z-[10] opacity-40"
               style={{
                 height: height,
                 width: spineWidth,
@@ -274,10 +274,12 @@ export default function BookshelfCarousel({ books = [] }) {
               }}
             />
             <h2
-              className="text-sm font-bold font-sans select-none"
+              className="text-sm font-bold font-sans select-none relative z-[20] text-white"
               style={{
                 writingMode: "horizontal-tb",
-                transform: "none"
+                transform: "none",
+                textShadow: '0 1px 2px rgba(0,0,0,0.3)',
+                color: "#FFFFFF"
               }}
             >
               &lt;
@@ -312,24 +314,22 @@ export default function BookshelfCarousel({ books = [] }) {
                   willChange: "auto",
                 }}
               >
-                {/* Spine */}
-                <div
-                  className="flex items-center justify-center shrink-0 origin-right"
-                  style={{
-                    width: spineWidth,
-                    height: height,
-                    backgroundColor: book.spineColor,
-                    color: book.textColor,
-                    transform: `translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(${isOpen ? "-60deg" : "0deg"
-                      }) rotateZ(0deg) skew(0deg, 0deg)`,
-                    transition: "all 800ms ease",
-                    willChange: "auto",
-                    filter: "brightness(0.8) contrast(2)",
-                    transformStyle: "preserve-3d",
-                  }}
-                >
+                  <div
+                    className="flex items-center justify-center shrink-0 origin-right relative"
+                    style={{
+                      width: spineWidth,
+                      height: height,
+                      backgroundColor: book.spineColor,
+                      transform: `translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(${isOpen ? "-60deg" : "0deg"
+                        }) rotateZ(0deg) skew(0deg, 0deg)`,
+                      transition: "all 800ms ease",
+                      willChange: "auto",
+                      filter: "brightness(0.8) contrast(2)",
+                      transformStyle: "preserve-3d",
+                    }}
+                  >
                   <span
-                    className="pointer-events-none fixed top-0 left-0 z-50 opacity-40"
+                    className="pointer-events-none absolute top-0 left-0 z-[10] opacity-40"
                     style={{
                       height: height,
                       width: spineWidth,
@@ -337,10 +337,11 @@ export default function BookshelfCarousel({ books = [] }) {
                     }}
                   />
                   <h2
-                    className="text-xs font-sans select-none overflow-hidden text-ellipsis whitespace-nowrap"
+                    className="text-xs font-sans select-none overflow-hidden text-ellipsis whitespace-nowrap relative z-[20]"
                     style={{
                       writingMode: "vertical-rl",
-                      maxHeight: `${height - 24}px`
+                      maxHeight: `${height - 24}px`,
+                      color: book.textColor
                     }}
                   >
                     {book.title}
@@ -416,7 +417,7 @@ export default function BookshelfCarousel({ books = [] }) {
             aria-label="Scroll right"
           >
             <span
-              className="pointer-events-none absolute top-0 left-0 z-50 opacity-40"
+              className="pointer-events-none absolute top-0 left-0 z-[10] opacity-40"
               style={{
                 height: height,
                 width: spineWidth,
@@ -424,9 +425,11 @@ export default function BookshelfCarousel({ books = [] }) {
               }}
             />
             <h2
-              className="text-sm font-bold font-sans select-none"
+              className="text-sm font-bold font-sans select-none relative z-[20] text-white"
               style={{
                 writingMode: "horizontal-tb",
+                textShadow: '0 1px 2px rgba(0,0,0,0.3)',
+                color: "#FFFFFF"
               }}
             >
               &gt;
