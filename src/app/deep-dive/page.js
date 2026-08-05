@@ -9,19 +9,6 @@ export default function DeepDives() {
     <main className="page-content">
       <div className="flex flex-col">
 
-        {/* Computer Vision */}
-        <div className="deep-dive-item">
-          <h2>Computer Vision</h2>
-          <span className="text-[12px] text-[#888]">[In Progress]</span>
-          <p>
-            Studying how machines perceive and understand visual information from images and videos using modern computer vision and deep learning techniques.
-          </p>
-          <div className="links">
-            <Link href="/deep-dive/computer-vision">Research</Link>
-            <Link href="https://github.com/amarjeetsingh146" target="_blank" rel="noopener noreferrer">GitHub</Link>
-          </div>
-        </div>
-
         {/* Embedded Systems */}
         <div className="deep-dive-item">
           <h2>Embedded Systems</h2>
