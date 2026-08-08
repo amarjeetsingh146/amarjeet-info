@@ -3,6 +3,32 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <main className="page-content">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Amarjeet Singh",
+            "url": "https://www.amarjeet.info",
+            "jobTitle": "Software Engineer",
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "AKTU, Lucknow"
+            },
+            "knowsAbout": [
+              "Artificial Intelligence",
+              "Machine Learning",
+              "Software Engineering",
+              "Data Analysis"
+            ],
+            "sameAs": [
+              "https://x.com/amarjeet_076",
+              "https://www.linkedin.com/in/amarjeetsingh461/"
+            ]
+          })
+        }}
+      />
       <h1>Amarjeet Singh</h1>
 
       <h4>Some things about me:</h4>

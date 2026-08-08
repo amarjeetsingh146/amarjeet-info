@@ -15,11 +15,40 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://www.amarjeet.info'),
   title: {
     template: 'Amarjeet Singh | %s',
-    default: 'Amarjeet Singh',
+    default: 'Amarjeet Singh - Software Engineer & AI Enthusiast',
   },
-  description: 'Amarjeet Singh Portfolio',
+  description: 'Portfolio of Amarjeet Singh, a Software Engineer focusing on Artificial Intelligence, Machine Learning, and highly scalable systems.',
+  keywords: ['Amarjeet Singh', 'Amarjeet', 'Software Engineer', 'Machine Learning', 'Artificial Intelligence', 'AI', 'Developer', 'Portfolio'],
+  authors: [{ name: 'Amarjeet Singh' }],
+  creator: 'Amarjeet Singh',
+  openGraph: {
+    title: 'Amarjeet Singh - Software Engineer',
+    description: 'Portfolio of Amarjeet Singh, a Software Engineer focusing on Artificial Intelligence, Machine Learning, and highly scalable systems.',
+    url: 'https://www.amarjeet.info',
+    siteName: 'Amarjeet Singh Portfolio',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Amarjeet Singh',
+    description: 'Portfolio of Amarjeet Singh, focusing on AI and Software Engineering.',
+    creator: '@amarjeet_076',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({ children }) {
