@@ -2,12 +2,13 @@
 
 import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 
 // ─── Constants ──────────────────────────────────────────────────────────────────
 const EASE = [0.22, 1, 0.36, 1];
 
 // ─── Info Card ──────────────────────────────────────────────────────────────────
-function BookInfoCard({ book, onClose }) {
+function BookInfoCard({ book, onClose, priority = false }) {
   return (
     <motion.div
       key={book.id || book.title}
@@ -42,11 +43,14 @@ function BookInfoCard({ book, onClose }) {
         </button>
       )}
 
-      <img
+      <Image
         src={book.coverImg}
         alt={book.title}
+        width={112}
+        height={160}
+        sizes="(max-width: 640px) 96px, 112px"
         className="w-24 sm:w-28 h-36 sm:h-40 object-cover border-2 border-gray-200 shadow-md shrink-0 self-start"
-        loading="lazy"
+        priority={priority}
         draggable={false}
       />
       <div className="flex flex-col min-w-0 pr-6">
@@ -289,7 +293,7 @@ export default function BookshelfCarousel({ books = [] }) {
 
         {/* Viewport */}
         <div
-          className="flex items-center gap-1 overflow-x-hidden cursor-grab py-8 px-[42px] select-none"
+          className="flex items-center gap-2 overflow-x-hidden cursor-grab py-8 px-[42px] select-none"
           ref={viewportRef}
         >
           {books.map((book, index) => {
@@ -378,9 +382,12 @@ export default function BookshelfCarousel({ books = [] }) {
                       background: `linear-gradient(to right, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.5) 3px, rgba(255, 255, 255, 0.25) 4px, rgba(255, 255, 255, 0.25) 6px, transparent 7px, transparent 9px, rgba(255, 255, 255, 0.25) 9px, transparent 12px)`,
                     }}
                   />
-                  <img
+                  <Image
                     src={book.coverImg}
                     alt={book.title}
+                    width={166}
+                    height={220}
+                    sizes="166px"
                     style={{
                       width: coverWidth,
                       height: height,
@@ -388,7 +395,6 @@ export default function BookshelfCarousel({ books = [] }) {
                       willChange: "auto",
                       objectFit: "fill",
                     }}
-                    loading="lazy"
                     draggable={false}
                   />
                 </div>
@@ -454,8 +460,8 @@ export default function BookshelfCarousel({ books = [] }) {
             transition={{ duration: 0.4, ease: EASE }}
             className="flex flex-col gap-2"
           >
-            {books.map((book) => (
-              <BookInfoCard key={book.id || book.title} book={book} />
+            {books.map((book, index) => (
+              <BookInfoCard key={book.id || book.title} book={book} priority={index < 4} />
             ))}
           </motion.div>
         )}
