@@ -29,7 +29,7 @@
   /* ─── Page-level headings ─── */
   /* h1 on main pages (e.g. "Amarjeet Singh") */
   .page-content h1 {
-    @apply font-bold text-[#1a202c] mb-[24px] leading-[1.2];
+    @apply font-bold text-[#1a202c] mb-[24px] leading-[1.4] pt-[4px];
     font-size: 48px;
   }
 
