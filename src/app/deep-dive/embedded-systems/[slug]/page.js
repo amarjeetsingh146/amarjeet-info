@@ -10,24 +10,24 @@ export async function generateMetadata({ params }) {
     .join(' ');
 
   return {
-    title: `${title} | Computer Vision`,
+    title: `${title} | Embedded Systems`,
   };
 }
 
-export default async function ComputerVisionSlugPage({ params }) {
+export default async function EmbeddedSystemsSlugPage({ params }) {
   const { slug } = await params;
 
   return (
     <div className="article">
       <Link 
-        href="/deep-dive/computer-vision" 
+        href="/deep-dive/embedded-systems" 
         className="inline-flex items-center gap-1 text-[13px] text-[#888] hover:text-[#4b86b4] mb-8 font-bold tracking-[1px] uppercase transition-colors"
       >
         <span className="text-[14px]">←</span> Back
       </Link>
       
       <div className="mb-12">
-        <StepContent folder="computer-vision-steps" stepId={slug} />
+        <StepContent folder="embedded-systems-steps" stepId={slug} />
       </div>
     </div>
   );

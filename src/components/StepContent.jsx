@@ -26,7 +26,7 @@ const components = {
     />
   ),
   p: (props) => (
-    <p className="text-[15px] text-slate-600 leading-relaxed mb-4" {...props} />
+    <p className="text-[15px] text-slate-600 leading-normal mb-4" {...props} />
   ),
   blockquote: (props) => (
     <blockquote className="border-l-2 border-blue-400 pl-4 py-1 my-4 bg-blue-50/50 rounded-r-lg italic text-slate-700" {...props} />
