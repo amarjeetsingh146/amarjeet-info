@@ -65,7 +65,7 @@ export default function Navigation({ children }) {
         {/* NAVIGATION group — matches Adam's VStack spacing={10} = 40px between groups */}
         <div className="mb-[40px]">
           {/* Label: Adam uses fontWeight="bold" fontSize="smaller" */}
-          <p className="text-[11px] font-bold tracking-[0.12em] uppercase text-black mb-[12px]">NAVIGATION</p>
+          <p className="text-[14px] font-bold tracking-[0.12em] uppercase text-black mb-[12px]">NAVIGATION</p>
           {/* Links: Adam uses fontSize="lg" (18px), spacing={3} = 12px between items */}
           <Link href="/" className={`block text-[18px] mb-[12px] no-underline transition-colors duration-200 ${isActive('/', true) ? 'text-black' : 'text-[#718096] hover:text-black'}`}>Home</Link>
           <Link href="/reading" className={`block text-[18px] mb-[12px] no-underline transition-colors duration-200 ${isActive('/reading') ? 'text-black' : 'text-[#718096] hover:text-black'}`}>Reading</Link>
@@ -75,7 +75,7 @@ export default function Navigation({ children }) {
 
         {/* FIND ME ON group */}
         <div className="mb-[40px]">
-          <p className="text-[11px] font-bold tracking-[0.12em] uppercase text-black mb-[12px]">FIND ME ON</p>
+          <p className="text-[14px] font-bold tracking-[0.12em] uppercase text-black mb-[12px]">FIND ME ON</p>
           <a href="https://x.com/amarjeet_076" target="_blank" rel="noopener noreferrer" className="block text-[18px] mb-[12px] text-[#718096] no-underline transition-colors duration-200 hover:text-black">Twitter</a>
           <a href="https://www.linkedin.com/in/amarjeetsingh461/" target="_blank" rel="noopener noreferrer" className="block text-[18px] mb-[12px] text-[#718096] no-underline transition-colors duration-200 hover:text-black">LinkedIn</a>
           <a href="https://github.com/amarjeetsingh146" target="_blank" rel="noopener noreferrer" className="block text-[18px] mb-[12px] text-[#718096] no-underline transition-colors duration-200 hover:text-black">GitHub</a>
