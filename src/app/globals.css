@@ -66,16 +66,16 @@
 
   /* ─── Deep Dive list items (divider style) ─── */
   .deep-dive-item {
-    @apply border-b border-[#e2e8f0] py-[16px];
+    @apply border-b border-[#e2e8f0] py-[8px];
   }
   .deep-dive-item:first-child {
     @apply border-t border-[#e2e8f0];
   }
   .deep-dive-item h2 {
-    @apply text-[16px] font-bold text-[#1a202c] mb-[4px];
+    @apply text-[16px] font-bold text-[#1a202c] mb-[0px];
   }
   .deep-dive-item p {
-    @apply text-[14px] text-[#555] leading-[1.4] mb-[12px];
+    @apply text-[14px] text-[#555] leading-[1.25] mb-[4px];
   }
   .deep-dive-item .links {
     @apply flex gap-[24px] flex-wrap;

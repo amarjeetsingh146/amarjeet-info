@@ -9,7 +9,7 @@ export default function MachineLearningPage() {
   return (
     <div className="page-content">
       <h2 className="text-[13px] font-bold tracking-[2px] uppercase text-[#888] mb-4">Foundations</h2>
-      <div className="flex flex-wrap gap-x-6 gap-y-2">
+      <div className="flex flex-col gap-y-3">
         <Link href="/deep-dive/machine-learning/ml-landscape" className="inline-flex items-center gap-1 text-[14px] text-[#4b86b4] hover:underline underline-offset-4 decoration-1">ML Landscape <span className="text-[16px] font-bold">↗</span></Link>
         <Link href="/deep-dive/machine-learning/foundation" className="inline-flex items-center gap-1 text-[14px] text-[#4b86b4] hover:underline underline-offset-4 decoration-1">Foundation <span className="text-[16px] font-bold">↗</span></Link>
         <Link href="/deep-dive/machine-learning/core-intuitions" className="inline-flex items-center gap-1 text-[14px] text-[#4b86b4] hover:underline underline-offset-4 decoration-1">Core Intuitions <span className="text-[16px] font-bold">↗</span></Link>
