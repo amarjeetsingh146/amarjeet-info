@@ -17,10 +17,6 @@ export default function MachineLearningPage() {
         <Link href="/deep-dive/machine-learning/reframe-the-history-of-ml" className="inline-flex items-center gap-1 text-[14px] text-[#4b86b4] hover:underline underline-offset-4 decoration-1">Reframe the History of ml <span className="text-[16px] font-bold">↗</span></Link>
       </div>
 
-      <h2 className="text-[13px] font-bold tracking-[2px] uppercase text-[#888] mt-8 mb-4">Implementation</h2>
-      <div className="flex flex-col gap-y-3">
-        <Link href="/deep-dive/machine-learning/code-linear-regression-from-scratch" className="inline-flex items-center gap-1 text-[14px] text-[#4b86b4] hover:underline underline-offset-4 decoration-1">Code Linear Regression from Scratch <span className="text-[16px] font-bold">↗</span></Link>
-      </div>
 
       <h2 className="text-[13px] font-bold tracking-[2px] uppercase text-[#888] mt-8 mb-4">References</h2>
       <div className="flex flex-col gap-y-3">
