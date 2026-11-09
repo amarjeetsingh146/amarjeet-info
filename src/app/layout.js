@@ -57,7 +57,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
       </head>
-      <body suppressHydrationWarning className={`${lora.variable} ${spaceGrotesk.variable} font-space-grotesk text-[16px] leading-relaxed text-[#222]`}>
+      <body suppressHydrationWarning className={`${lora.variable} ${spaceGrotesk.variable} font-space-grotesk text-[16px] leading-relaxed text-[#222] bg-[#f5f5ee]`}>
         <Navigation>
           {children}
         </Navigation>

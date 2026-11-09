@@ -24,7 +24,7 @@ export default function Navigation({ children }) {
   return (
     <>
       {/* Mobile top bar — height: 64px to match Adam's h-16 */}
-      <header className="fixed top-0 left-0 right-0 h-[64px] bg-white border-b border-[#e2e8f0] px-4 items-center justify-between z-[1000] hidden max-md:flex">
+      <header className="fixed top-0 left-0 right-0 h-[64px] bg-[#f5f5ee] border-b border-[#e2e8f0] px-4 items-center justify-between z-[1000] hidden max-md:flex">
         <nav className="flex gap-2 sm:gap-4 overflow-x-auto no-scrollbar">
           <Link href="/" className={`inline-block py-2 px-2 sm:px-4 no-underline font-normal transition-all duration-200 text-[16px] whitespace-nowrap ${isActive('/', true) ? 'text-black font-medium' : 'text-[#718096] hover:text-black'}`}>Home</Link>
           <Link href="/reading" className={`inline-block py-2 px-2 sm:px-4 no-underline font-normal transition-all duration-200 text-[16px] whitespace-nowrap ${isActive('/reading') ? 'text-black font-medium' : 'text-[#718096] hover:text-black'}`}>Reading</Link>
@@ -51,7 +51,7 @@ export default function Navigation({ children }) {
 
       {/* Sidebar — matches Adam's layout: fixed left, positioned to the left of content */}
       <aside
-        className={`fixed bg-white z-[999]
+        className={`fixed bg-[#f5f5ee] z-[999]
           md:top-0 md:left-0 md:h-screen md:w-[440px]
           md:pt-[90px] md:pb-[90px] md:pr-[34px] md:pl-[284px]
           max-md:top-[64px] max-md:left-auto max-md:right-4 max-md:h-auto
